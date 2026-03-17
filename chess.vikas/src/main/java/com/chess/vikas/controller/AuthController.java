@@ -1,5 +1,6 @@
 package com.chess.vikas.controller;
 
+import org.springframework.context.annotation.Profile;
 import com.chess.vikas.dto.LoginRequest;
 import com.chess.vikas.dto.RegisterRequest;
 import com.chess.vikas.service.UserService;
@@ -8,6 +9,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 import com.chess.vikas.service.JwtService;
 
+@Profile("db")
 @RestController
 @RequestMapping("/api/auth")
 @RequiredArgsConstructor

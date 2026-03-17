@@ -1,5 +1,6 @@
 package com.chess.vikas.service;
 
+import org.springframework.context.annotation.Profile;
 import com.chess.vikas.dto.LoginRequest;
 import com.chess.vikas.dto.RegisterRequest;
 import com.chess.vikas.entity.User;
@@ -8,6 +9,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
+@Profile("db")
 @Service
 @RequiredArgsConstructor
 public class UserService {
