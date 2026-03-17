@@ -1,14 +1,8 @@
 package com.chess.vikas;
-
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-
-@SpringBootApplication(exclude = {
-        org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration.class,
-        org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration.class
-})
+@SpringBootApplication
 public class MainApplication {
-
-	public static void main(String[] args) {
-		SpringApplication.run(MainApplication.class, args);
-	}}
+    public static void main(String[] args) {
+        SpringApplication.run(MainApplication.class, args);
+    }}
